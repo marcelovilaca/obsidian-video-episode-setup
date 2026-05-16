@@ -119,10 +119,23 @@ That way every new video starts from a predictable production system instead of 
 - `README.md` — project documentation
 - `assets/obsidian-video-episode-setup.gif` — demo clip
 
+## Repository contents
+
+This repository mirrors the parts of the vault that belong to the video project launcher system:
+
+- plugin source (`main.js`, `manifest.json`)
+- launcher documentation notes under `Notes/`
+- reusable templates under `Templates/`
+- base database schema under `Templates/Bases/`
+- the project starter template under `Projects/Video Projects/_TEMPLATE - New Video Project/`
+- the demo GIF under `assets/`
+
+The folder structure is kept the same as in the vault so files stay easy to map back into Obsidian.
+
 ## Notes
 
-This repository contains the plugin source only.
-It is meant to stay lightweight and easy to maintain.
+This repository is intentionally focused on the launcher ecosystem only.
+It is meant to stay organized, portable, and easy to maintain.
 
 ## License
 

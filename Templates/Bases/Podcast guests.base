@@ -1,0 +1,40 @@
+filters:
+  and:
+    - note.categories.contains(link("Podcast guests"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Guest
+  note.status:
+    displayName: Status
+  note.country:
+    displayName: Country
+  note.profession:
+    displayName: Profession
+  note.language:
+    displayName: Language
+  note.facial_reference:
+    displayName: Guest Image
+  note.last_contact:
+    displayName: Last Contact
+  note.next_episode:
+    displayName: Next Episode
+  note.podcast_fit:
+    displayName: Fit
+views:
+  - type: table
+    name: Guests
+    order:
+      - file.name
+      - country
+      - profession
+      - language
+      - facial_reference
+      - next_episode
+      - status
+      - podcast_fit
+    sort:
+      - property: next_episode
+        direction: DESC
+    columnSize:
+      note.facial_reference: 368
