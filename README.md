@@ -112,16 +112,35 @@ A good template usually includes:
 
 That way every new video starts from a predictable production system instead of a blank page.
 
-## Files in this repository
+## Repository map
 
-- `main.js` — plugin logic
-- `manifest.json` — plugin metadata
-- `README.md` — project documentation
-- `assets/obsidian-video-episode-setup.gif` — demo clip
+This repository mirrors the parts of the vault that belong to the launcher system, while keeping the same folder structure so everything is easy to map back into Obsidian.
 
-## Repository contents
+```
+.
+├── main.js
+├── manifest.json
+├── README.md
+├── LICENSE
+├── assets/
+│   └── obsidian-video-episode-setup.gif
+├── Categories/
+│   └── Podcast guests.md
+├── Notes/
+│   └── ...launcher docs, dashboards, and support notes...
+├── Projects/
+│   └── Video Projects/
+│       └── _TEMPLATE - New Video Project/
+│           ├── 00 - Project Hub.md
+│           ├── 01 - Idea & Brief.md
+│           └── 09 - AI Generation Prompt.md
+└── Templates/
+    ├── ...project templates and kanbans...
+    └── Bases/
+        └── Podcast guests.base
+```
 
-This repository mirrors the parts of the vault that belong to the video project launcher system:
+Included content:
 
 - plugin source (`main.js`, `manifest.json`)
 - launcher documentation notes under `Notes/`
@@ -130,7 +149,15 @@ This repository mirrors the parts of the vault that belong to the video project 
 - the project starter template under `Projects/Video Projects/_TEMPLATE - New Video Project/`
 - the demo GIF under `assets/`
 
-The folder structure is kept the same as in the vault so files stay easy to map back into Obsidian.
+## For public visitors
+
+If you are opening this repository for the first time, here is the fastest way to understand it:
+
+1. Watch the demo GIF near the top of the page.
+2. Read the short overview in this README.
+3. Inspect `manifest.json` to confirm the plugin metadata.
+4. Open `main.js` if you want to see the launcher logic.
+5. Browse the `Notes/` and `Templates/` folders to see how the launcher fits into the larger creator OS.
 
 ## Notes
 
